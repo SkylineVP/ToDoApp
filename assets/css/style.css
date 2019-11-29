@@ -1,0 +1,66 @@
+#header{
+    width: 300px;
+    background-image: url("https://st3.depositphotos.com/9956576/13032/v/950/depositphotos_130322516-stock-illustration-mountain-and-pine-forest-background.jpg");
+    height: 150px;
+    background-position: center;
+    background-size: 300px;
+    position: relative;
+}
+#toDoApp{
+    margin: 80px auto;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+
+
+}
+#addToDoButton{
+    display: inline-block;
+    border: solid 1px darkgoldenrod;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.taskItem{
+    border-bottom: solid 1px black;
+    box-sizing: border-box;
+    padding: 15px 0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+}
+
+.taskDone{
+    text-decoration: line-through;
+}
+
+
+
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top:5px ;
+}
+.deleteTask{
+    justify-self: flex-end;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+
+}
+.time{
+    color: #4704b4;
+    font-family: sans-serif;
+    font-size: 45px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
