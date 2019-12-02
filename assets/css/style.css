@@ -1,3 +1,11 @@
+body{
+    box-sizing: border-box;
+    padding: 20px;
+}
+.inputConteiner{
+    display: flex;
+
+}
 #header{
     width: 100%;
     background-image: url("https://st3.depositphotos.com/9956576/13032/v/950/depositphotos_130322516-stock-illustration-mountain-and-pine-forest-background.jpg");
@@ -9,8 +17,9 @@
     position: relative;
 }
 #toDoApp{
-    margin: 80px auto;
-    width: 400px;
+    margin: 20px auto;
+    min-width: 300px;
+    max-width: 400px;
     min-height:400px ;
     border-radius: 12px;
     overflow: hidden;
@@ -22,6 +31,7 @@
 }
 #addToDoButton{
     display: inline-block;
+    min-width: 110px;
     border: solid 1px #99a6ae;
     box-sizing: border-box;
     background-color: #526371;
@@ -34,7 +44,7 @@
     -webkit-box-shadow: 0 1px 0 0 #576a79 inset ;
     color: #f4f4f4;
     font-weight: bold;
-    padding: 6px 20px;
+    padding: 1px 20px;
     text-align: center;
 }
 
@@ -51,6 +61,7 @@
     position: relative;
     width: 80%;
     border-radius: 2px;
+
 }
 
 .taskDone{
@@ -73,8 +84,10 @@
 input[type=text]{
    border: none;
     border-bottom: solid 1px grey;
-    width: 60%;
     margin-right: 15px;
+    flex-grow: 0.8;
+    min-width: 40px;
+
 }
 .validInput{
     border-bottom: solid 1px green !important;
@@ -102,4 +115,7 @@ h1 {
     position: absolute;
     bottom: 5px;
     left: 10px;
+}
+@media screen (max-width:300px){
+
 }

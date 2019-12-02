@@ -107,7 +107,7 @@ function createTimeView() {
     let date = new Date();
     const time = document.createElement("div");
     time.classList.add("time");
-    time.innerText = date.toLocaleString('en', {weekday: 'long'}) + " " + date.toLocaleString('en', {month: 'long'}) + " " + date.getDate();
+    time.innerText = date.toLocaleString('en', {weekday: 'long'}) + " \n " + date.toLocaleString('en', {month: 'long'}) + " " + date.getDate();
     const header = document.getElementById("header");
     header.appendChild(time);
 }
